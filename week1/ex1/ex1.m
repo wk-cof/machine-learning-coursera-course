@@ -28,12 +28,12 @@ clear ; close all; clc
 
 %% ==================== Part 1: Basic Function ====================
 % Complete warmUpExercise.m
-fprintf('Running warmUpExercise ... \n');
-fprintf('5x5 Identity Matrix: \n');
-warmUpExercise()
+%printf('Running warmUpExercise ... \n');
+%fprintf('5x5 Identity Matrix: \n');
+%warmUpExercise()
 
-fprintf('Program paused. Press enter to continue.\n');
-pause;
+%fprintf('Program paused. Press enter to continue.\n');
+%pause;
 
 
 %% ======================= Part 2: Plotting =======================
@@ -45,6 +45,9 @@ m = length(y); % number of training examples
 % Plot Data
 % Note: You have to complete the code in plotData.m
 plotData(X, y);
+plot(X, y, 'gx', 'MarkerSize', 10); % Plot the data
+ylabel('Profit in $10,000s'); % Set the y??axis label
+xlabel('Population of City in 10,000s');
 
 fprintf('Program paused. Press enter to continue.\n');
 pause;
